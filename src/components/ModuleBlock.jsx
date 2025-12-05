@@ -19,7 +19,7 @@ export default function ModuleBlock({
     <button
       onClick={onClick}
       className={`
-        relative border-4 border-black bg-white
+        relative border-4 border-black bg-[#fffff0]
         overflow-hidden
         
         /* ⭐ Smaller, cleaner box size */

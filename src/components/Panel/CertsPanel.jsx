@@ -35,7 +35,7 @@ const isMobile = window.innerWidth < 640;
       className="fixed inset-0 bg-black/30 backdrop-blur-sm flex justify-center items-start z-50"
     >
       {/* FLOATING PANEL */}
-      <div className="w-full max-w-lg bg-white border-4 border-black shadow-[0px_8px_0_0_#000] p-6 mt-20 mb-20">
+      <div className="w-full max-w-lg bg-[#e9e4e4] border-4 border-black shadow-[0px_8px_0_0_#000] p-6 mt-20 mb-20">
         {/* HEADER */}
         <div className="flex justify-between items-center mb-6 border-b-4 border-black pb-3">
           <div>
@@ -52,7 +52,7 @@ const isMobile = window.innerWidth < 640;
         </div>
 
         {/* BADGES (VERTICAL) */}
-        <div className="flex flex-col gap-4">
+        <div className="bg-[#fffff0] flex flex-col gap-4">
           <BadgeCard
             title="AWS Cloud Practitioner"
             issuer="Geeks-for-Geeks"
@@ -84,39 +84,34 @@ const isMobile = window.innerWidth < 640;
 
 /* ------------ Badge card component ------------ */
 
-function BadgeCard({ title, issuer, year, color, bgImage, onClick }) {
+function BadgeCard({ title, issuer, year, color, onClick }) {
   return (
     <div
       onClick={onClick}
       className="
-        relative border-4 border-black p-4 shadow-[6px_6px_0_0_#000] 
-         overflow-hidden cursor-pointer transform transition
+        relative border-4 bg-[#fffff0] border-black p-4
+        shadow-[6px_6px_0_0_#000] 
+        cursor-pointer transform transition
         hover:scale-[1.03] hover:shadow-[10px_10px_0_0_#000]
       "
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      {/* LABEL */}
+      <span
+        className="
+          px-2 py-1 text-xs border-2 border-black 
+          shadow-[3px_3px_0_0_#000] 
+          font-semibold inline-block mb-2
+        "
+        style={{ backgroundColor: color }}
+      >
+        {year}
+      </span>
 
-      {/* Content */}
-      <div className="relative z-10">
-        <span
-          className="px-2 py-1 text-xs border-2 border-black shadow-[3px_3px_0_0_#000] 
-                     font-semibold inline-block mb-2"
-          style={{ backgroundColor: color }}
-        >
-          {year}
-        </span>
-
-        <h3 className="text-lg font-black">{title}</h3>
-        <p className="text-xs mt-1 opacity-80 uppercase tracking-wide">
-          {issuer}
-        </p>
-      </div>
+      {/* TITLE + ISSUER */}
+      <h3 className="text-lg font-black">{title}</h3>
+      <p className="text-xs mt-1 opacity-80 uppercase tracking-wide">
+        {issuer}
+      </p>
     </div>
   );
 }

@@ -16,7 +16,7 @@ const isMobile = window.innerWidth < 640;
   <motion.div
     className="
       w-full h-full max-w-xl 
-      bg-white border-l-4 border-r-4 border-black 
+      bg-[#e9e4e4] border-l-4 border-r-4 border-black 
       shadow-[0px_8px_0_0_#000] 
       p-6 overflow-y-auto
       rounded-none
@@ -82,7 +82,7 @@ const isMobile = window.innerWidth < 640;
         </div>
 
         {/* AVAILABILITY */}
-        <div className="mt-8 border-4 border-black p-4 bg-white shadow-[6px_6px_0_0_#000]">
+        <div className="mt-8 border-4 border-black p-4 bg-[#fffff0] shadow-[6px_6px_0_0_#000]">
           <h3 className="text-lg font-bold uppercase">Availability</h3>
           <p className="text-sm mt-2">
             Open to internship roles, freelance projects, and SDE opportunities.
@@ -108,7 +108,7 @@ function ContactCard({ label, value, href, color }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="block border-4 border-black p-4 bg-white shadow-[6px_6px_0_0_#000] 
+      className="block border-4 border-black p-4 bg-[#fffff0] shadow-[6px_6px_0_0_#000] 
                  hover:-translate-x-1 hover:-translate-y-1 transition"
     >
       <div className="flex justify-between items-center">

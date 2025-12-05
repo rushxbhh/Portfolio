@@ -15,7 +15,7 @@ export default function CertificateDetailPanel({ cert, onClose }) {
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.7, opacity: 0 }}
         transition={{ type: "spring", stiffness: 60, damping: 18 }}
-        className="bg-white border-4 border-black shadow-[12px_12px_0_0_#000] 
+        className="bg-[#e9e4e4] border-4 border-black shadow-[12px_12px_0_0_#000] 
                     w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6"
       >
         {/* HEADER */}

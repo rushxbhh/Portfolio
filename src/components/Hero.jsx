@@ -7,6 +7,7 @@ function Hero({ onEnterLab }) {
         min-h-[100dvh]
         flex 
         px-4 sm:px-6
+       bg-[#e9e4e4]
       "
     >
       <motion.div
@@ -17,7 +18,7 @@ function Hero({ onEnterLab }) {
     ease: "easeOut"
   }}
   className="mx-auto my-auto border-4 border-black p-6 sm:p-10 shadow-[8px_8px_0_0_#000] 
-             bg-white w-full max-w-md text-center rounded-xl
+             bg-[#C9DDEB] w-full max-w-md text-center rounded-xl
              hover:shadow-[12px_12px_0_0_#000] hover:-translate-y-1 
              transition-all duration-300"
 >
@@ -27,7 +28,7 @@ function Hero({ onEnterLab }) {
           className="
             w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 
             rounded-full border-4 border-black 
-            shadow-[5px_5px_0_0_#000] overflow-hidden bg-white
+            shadow-[5px_5px_0_0_#000] overflow-hidden bg-[#49596b]
           "
         >
           <img
@@ -57,7 +58,7 @@ function Hero({ onEnterLab }) {
           onClick={onEnterLab}
           className="
             px-6 py-3 sm:px-8 sm:py-4 border-4 border-black 
-            bg-[#22c55e] shadow-[5px_5px_0_0_#000] rounded-lg
+            bg-[#fffff0] shadow-[5px_5px_0_0_#000] rounded-lg
             text-xs sm:text-sm uppercase font-black tracking-wider
           "
         >

@@ -124,7 +124,7 @@ export default function ProjectsPanel({ onClose }) {
         className="
           w-full h-dvh md:h-full 
           max-w-md md:max-w-xl 
-          bg-white border-t-4 md:border-t-0 md:border-l-4 border-black
+          bg-[#e9e4e4] border-t-4 md:border-t-0 md:border-l-4 border-black
           shadow-[0px_-8px_0_0_#000] md:shadow-[-8px_0px_0_0_#000]
           md:rounded-none
           p-5 md:p-6 overflow-y-auto
@@ -193,7 +193,7 @@ export default function ProjectsPanel({ onClose }) {
 -------------------------------------------- */
 function ProjectCard({ title, description, placeholder, tags, onView }) {
   return (
-    <div className="border-4 border-black p-5 shadow-[8px_8px_0_0_#000] bg-[#fefefe]">
+    <div className="border-4 border-black p-5 shadow-[8px_8px_0_0_#000] bg-[#fffff0]">
       <div className="w-full h-40 bg-gray-200 border-4 border-black shadow-[4px_4px_0_0_#000]
                       flex items-center justify-center mb-4 ">
         <span className="text-xs uppercase opacity-60">{placeholder}</span>

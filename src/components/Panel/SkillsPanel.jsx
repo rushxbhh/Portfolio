@@ -43,7 +43,7 @@ export default function SkillsPanel({ onClose }) {
         className="
           w-full h-dvh md:h-full
           max-w-md md:max-w-2xl 
-          bg-white border-t-4 md:border-t-4 md:border-b-0 md:border-r-4 border-black
+         bg-[#e9e4e4] border-t-4 md:border-t-4 md:border-b-0 md:border-r-4 border-black
           shadow-[0px_-8px_0_0_#000] md:shadow-[0px_-8px_0_0_#000]
           md:rounded-none
           p-5 md:p-6 overflow-y-auto
@@ -149,7 +149,7 @@ function SkillCategory({ title, color, items }) {
     <motion.div
       whileHover={{ scale: 1.02, x: 4 }}
       transition={{ type: "spring", stiffness: 120, damping: 10 }}
-      className="border-4 border-black p-4 shadow-[6px_6px_0_0_#000] bg-[#fefefe] rounded-lg"
+      className="border-4 border-black p-4 shadow-[6px_6px_0_0_#000] bg-[#fffff0] "
     >
       {/* Heading */}
       <div className="flex items-center justify-between mb-3">

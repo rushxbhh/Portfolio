@@ -24,7 +24,7 @@ export default function ModuleGrid({ setActivePanel }) {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="min-h-screen flex flex-col items-center justify-center px-4"
+      className="bg-[#e9e4e4] min-h-screen flex flex-col items-center justify-center px-4"
     >
       <h2 className="text-2xl sm:text-3xl font-black mb-8 tracking-[0.25em] text-center">
         CHAPTERS OF MY CRAFT

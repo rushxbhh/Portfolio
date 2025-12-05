@@ -70,7 +70,7 @@ export default function EducationPanel({ onClose }) {
         className="
           w-full h-dvh md:h-full
           max-w-md md:max-w-xl
-          bg-white border-t-4 md:border-t-0 md:border-r-4 border-black 
+          bg-[#e9e4e4] border-t-4 md:border-t-0 md:border-r-4 border-black 
           shadow-[0px_-8px_0_0_#000] md:shadow-[6px_6px_0_0_#000]
            md:rounded-none
           p-5 md:p-6 overflow-y-auto
@@ -115,7 +115,7 @@ export default function EducationPanel({ onClose }) {
               <h3 className="text-lg font-black">10th Board — MP Board</h3>
               <p className="text-xs mt-1">2020</p>
 
-              <div className="mt-3 border-4 border-black p-3 bg-white shadow-[5px_5px_0_0_#000]">
+              <div className="mt-3 border-4 border-black p-3 bg-[#fffff0] shadow-[5px_5px_0_0_#000]">
                 <p className="text-sm">
                   Secured <strong>89.6%</strong>.
                 </p>
@@ -135,7 +135,7 @@ export default function EducationPanel({ onClose }) {
               <h3 className="text-lg font-black">12th Board — MP Board</h3>
               <p className="text-xs mt-1">2022</p>
 
-              <div className="mt-3 border-4 border-black p-3 bg-white shadow-[5px_5px_0_0_#000]">
+              <div className="mt-3 border-4 border-black p-3 bg-[#fffff0] shadow-[5px_5px_0_0_#000]">
                 <p className="text-sm">
                   Completed PCM with <strong>85.6%</strong>.
                 </p>
@@ -156,7 +156,7 @@ export default function EducationPanel({ onClose }) {
               <p className="text-xs mt-1">2021 — Present</p>
               <p className="text-xs opacity-80">Medicaps University</p>
 
-              <div className="mt-3 border-4 border-black p-3 bg-white shadow-[5px_5px_0_0_#000]">
+              <div className="mt-3 border-4 border-black p-3 bg-[#fffff0] shadow-[5px_5px_0_0_#000]">
                 <p className="text-sm">
                   Current CGPA: <strong>7.38</strong>
                 </p>

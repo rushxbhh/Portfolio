@@ -21,7 +21,7 @@ export default function ProjectDetailPanel({ project, onClose }) {
           mass: 0.6,
           delay: 0.15,
         }}
-        className="w-full max-w-2xl max-h-[90vh] bg-white border-4 border-black 
+        className="w-full max-w-2xl max-h-[90vh] bg-[#fffff0] border-4 border-black 
                    shadow-[12px_12px_0_#000] p-6 overflow-y-auto "
       >
         {/* HEADER */}
