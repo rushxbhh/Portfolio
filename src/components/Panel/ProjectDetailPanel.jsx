@@ -22,7 +22,7 @@ export default function ProjectDetailPanel({ project, onClose }) {
           delay: 0.15,
         }}
         className="w-full max-w-2xl max-h-[90vh] bg-white border-4 border-black 
-                   shadow-[12px_12px_0_#000] p-6 overflow-y-auto rounded-xl"
+                   shadow-[12px_12px_0_#000] p-6 overflow-y-auto "
       >
         {/* HEADER */}
         <div className="flex justify-between items-center mb-4 border-b-4 border-black pb-3">

@@ -101,7 +101,7 @@ function ExperienceCard({ company, role, duration, certificate, description, tec
   return (
     <div className="
       border-4 border-black p-4 sm:p-6 
-      rounded-xl shadow-[6px_6px_0_0_#000] 
+       shadow-[6px_6px_0_0_#000] 
       bg-[#fefefe] 
     ">
       
@@ -113,7 +113,7 @@ function ExperienceCard({ company, role, duration, certificate, description, tec
       {/* CERTIFICATE IMAGE */}
       <div className="
         w-full 
-        border-4 border-black rounded-xl 
+        border-4 border-black 
         shadow-[5px_5px_0_0_#000] 
         overflow-hidden mt-4
       ">

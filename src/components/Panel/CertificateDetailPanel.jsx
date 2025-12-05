@@ -16,7 +16,7 @@ export default function CertificateDetailPanel({ cert, onClose }) {
         exit={{ scale: 0.7, opacity: 0 }}
         transition={{ type: "spring", stiffness: 60, damping: 18 }}
         className="bg-white border-4 border-black shadow-[12px_12px_0_0_#000] 
-                   rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6"
+                    w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6"
       >
         {/* HEADER */}
         <div className="flex justify-between items-center mb-4 border-b-4 border-black pb-3">
@@ -32,7 +32,7 @@ export default function CertificateDetailPanel({ cert, onClose }) {
         </div>
 
         {/* CERT IMAGE */}
-        <div className="w-full h-auto border-4 border-black rounded-xl shadow-[6px_6px_0_0_#000] overflow-hidden">
+        <div className="w-full h-auto border-4 border-black shadow-[6px_6px_0_0_#000] overflow-hidden">
           <img
             src={cert.image}
             alt={cert.title}

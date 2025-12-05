@@ -35,7 +35,7 @@ const isMobile = window.innerWidth < 640;
       className="fixed inset-0 bg-black/30 backdrop-blur-sm flex justify-center items-start z-50"
     >
       {/* FLOATING PANEL */}
-      <div className="w-full max-w-lg bg-white border-4 border-black shadow-[0px_8px_0_0_#000] p-6 rounded-xl mt-20 mb-20">
+      <div className="w-full max-w-lg bg-white border-4 border-black shadow-[0px_8px_0_0_#000] p-6 mt-20 mb-20">
         {/* HEADER */}
         <div className="flex justify-between items-center mb-6 border-b-4 border-black pb-3">
           <div>
@@ -58,7 +58,7 @@ const isMobile = window.innerWidth < 640;
             issuer="Geeks-for-Geeks"
             year="2025"
             color="#38bdf8"
-            bgImage="/assets/aws.jpeg"
+        //    bgImage="/assets/aws.jpeg"
             onClick={() => setActiveCert("aws")}
           />
 
@@ -67,7 +67,7 @@ const isMobile = window.innerWidth < 640;
             issuer="Geeks-for-Geeks"
             year="2024"
             color="#22c55e"
-            bgImage="/assets/tcs.jpeg"
+          //  bgImage="/assets/tcs.jpeg"
             onClick={() => setActiveCert("tcs")}
           />
         </div>
@@ -90,7 +90,7 @@ function BadgeCard({ title, issuer, year, color, bgImage, onClick }) {
       onClick={onClick}
       className="
         relative border-4 border-black p-4 shadow-[6px_6px_0_0_#000] 
-        rounded-xl overflow-hidden cursor-pointer transform transition
+         overflow-hidden cursor-pointer transform transition
         hover:scale-[1.03] hover:shadow-[10px_10px_0_0_#000]
       "
       style={{

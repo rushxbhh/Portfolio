@@ -53,13 +53,14 @@ export default function EducationPanel({ onClose }) {
   };
 
   return (
-    <div
-      className="
-        fixed inset-0 bg-black/30 backdrop-blur-sm z-50
-        flex items-end justify-center
-        md:items-start md:justify-start
-      "
-    >
+   <div
+  className="
+    fixed inset-0 bg-black/30 backdrop-blur-sm z-50
+    flex items-start justify-start
+    md:items-start md:justify-start
+  "
+>
+
       {/* PANEL */}
       <motion.div
         variants={panelVariants}
@@ -71,7 +72,7 @@ export default function EducationPanel({ onClose }) {
           max-w-md md:max-w-xl
           bg-white border-t-4 md:border-t-0 md:border-r-4 border-black 
           shadow-[0px_-8px_0_0_#000] md:shadow-[6px_6px_0_0_#000]
-          rounded-t-2xl md:rounded-none
+           md:rounded-none
           p-5 md:p-6 overflow-y-auto
         "
       >

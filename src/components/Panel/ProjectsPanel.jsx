@@ -5,6 +5,32 @@ import ProjectDetailPanel from "./ProjectDetailPanel";
 export default function ProjectsPanel({ onClose }) {
   const [activeProject, setActiveProject] = useState(null);
 
+  // 🔥 SAME animation style as EducationPanel (but mirrored for right side)
+  const panelVariants = {
+    hidden: { x: "100%", opacity: 1 },
+
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 70,
+        damping: 15,
+      },
+    },
+
+    exit: {
+      x: "100%",
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 160,
+        damping: 20,
+        mass: 0.55,
+      },
+    },
+  };
+
   const PROJECT_DATA = {
     workpilot: {
       title: "WorkPilot – Employee Management System",
@@ -30,6 +56,7 @@ export default function ProjectsPanel({ onClose }) {
         "Actuator",
       ],
     },
+
     blockchain: {
       title: "Distributed Blockchain for Supply Chain",
       imagePlaceholder: "Blockchain Diagram Coming Soon",
@@ -51,6 +78,7 @@ export default function ProjectsPanel({ onClose }) {
         "MongoDB",
       ],
     },
+
     currency: {
       title: "Real-Time Currency Converter (React)",
       imagePlaceholder: "Currency UI Screenshot Coming Soon",
@@ -64,6 +92,7 @@ export default function ProjectsPanel({ onClose }) {
       ],
       stack: ["React", "TailwindCSS", "API", "JavaScript"],
     },
+
     stripe: {
       title: "Stripe Donation Website",
       imagePlaceholder: "Stripe Flow Screenshot Coming Soon",
@@ -82,22 +111,22 @@ export default function ProjectsPanel({ onClose }) {
     <div
       className="
         fixed inset-0 bg-black/30 backdrop-blur-sm z-50
-        flex items-end justify-center
+        flex items-start justify-end
         md:items-stretch md:justify-end
       "
     >
-      {/* ⭐ Animate ONLY this box – not the blur overlay */}
+      {/* PANEL */}
       <motion.div
-        initial={{ x: "100%" }}
-        animate={{ x: 0 }}
-        exit={{ x: "100%" }}
-        transition={{ type: "spring", stiffness: 70, damping: 15 }}
+        variants={panelVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
         className="
           w-full h-dvh md:h-full 
           max-w-md md:max-w-xl 
           bg-white border-t-4 md:border-t-0 md:border-l-4 border-black
           shadow-[0px_-8px_0_0_#000] md:shadow-[-8px_0px_0_0_#000]
-          rounded-t-2xl md:rounded-none
+          md:rounded-none
           p-5 md:p-6 overflow-y-auto
         "
       >
@@ -107,7 +136,7 @@ export default function ProjectsPanel({ onClose }) {
 
           <button
             onClick={onClose}
-            className="px-3 py-1 border-2 border-black bg-red-400 shadow-[4px_4px_0_0_#000] 
+            className="px-3 py-1 border-2 border-black bg-red-400 shadow-[4px_4px_0_0_#000]
                        font-bold hover:-translate-x-1 hover:-translate-y-1 transition"
           >
             X
@@ -159,16 +188,14 @@ export default function ProjectsPanel({ onClose }) {
   );
 }
 
-
 /* --------------------------------------------
    PROJECT CARD COMPONENT
 -------------------------------------------- */
 function ProjectCard({ title, description, placeholder, tags, onView }) {
   return (
-    <div className="border-4 border-black p-5 shadow-[8px_8px_0_0_#000] bg-[#fefefe] rounded-xl">
-      {/* IMAGE */}
-      <div className="w-full h-40 bg-gray-200 border-4 border-black shadow-[4px_4px_0_0_#000] 
-                      flex items-center justify-center mb-4 rounded-md">
+    <div className="border-4 border-black p-5 shadow-[8px_8px_0_0_#000] bg-[#fefefe]">
+      <div className="w-full h-40 bg-gray-200 border-4 border-black shadow-[4px_4px_0_0_#000]
+                      flex items-center justify-center mb-4 ">
         <span className="text-xs uppercase opacity-60">{placeholder}</span>
       </div>
 
@@ -177,10 +204,9 @@ function ProjectCard({ title, description, placeholder, tags, onView }) {
 
       <StackTags tags={tags} />
 
-      {/* VIEW DETAILS CTA */}
       <button
         onClick={onView}
-        className="mt-5 px-4 py-2 border-2 border-black bg-[#22c55e] shadow-[4px_4px_0_0_#000] 
+        className="mt-5 px-4 py-2 border-2 border-black bg-[#22c55e] shadow-[4px_4px_0_0_#000]
                    text-sm font-bold uppercase hover:-translate-x-1 hover:-translate-y-1 transition"
       >
         View Details

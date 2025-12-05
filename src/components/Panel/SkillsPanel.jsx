@@ -45,7 +45,7 @@ export default function SkillsPanel({ onClose }) {
           max-w-md md:max-w-2xl 
           bg-white border-t-4 md:border-t-4 md:border-b-0 md:border-r-4 border-black
           shadow-[0px_-8px_0_0_#000] md:shadow-[0px_-8px_0_0_#000]
-          rounded-t-2xl md:rounded-none
+          md:rounded-none
           p-5 md:p-6 overflow-y-auto
         "
       >
