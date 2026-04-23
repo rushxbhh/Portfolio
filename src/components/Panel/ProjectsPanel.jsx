@@ -93,18 +93,18 @@ export default function ProjectsPanel({ onClose }) {
       stack: ["React", "TailwindCSS", "API", "JavaScript"],
     },
 
-    stripe: {
-      title: "Stripe Donation Website",
-      imagePlaceholder: "Stripe Flow Screenshot Coming Soon",
-      description:
-        "A secure Stripe payment integration with backend payment flow, Spring Boot REST APIs, and complete transaction handling.",
-      features: [
-        "Stripe payment gateway integration",
-        "Secure backend APIs",
-        "Transaction response handling",
-      ],
-      stack: ["Java", "Spring Boot", "Stripe", "HTML", "CSS", "JavaScript"],
-    },
+    // stripe: {
+    //   title: "Stripe Donation Website",
+    //   imagePlaceholder: "Stripe Flow Screenshot Coming Soon",
+    //   description:
+    //     "A secure Stripe payment integration with backend payment flow, Spring Boot REST APIs, and complete transaction handling.",
+    //   features: [
+    //     "Stripe payment gateway integration",
+    //     "Secure backend APIs",
+    //     "Transaction response handling",
+    //   ],
+    //   stack: ["Java", "Spring Boot", "Stripe", "HTML", "CSS", "JavaScript"],
+    // },
 
     momento: {
   title: "Momento – Real-Time Ephemeral Chat Platform",
@@ -216,13 +216,13 @@ export default function ProjectsPanel({ onClose }) {
             onView={() => setActiveProject("currency")}
           />
 
-          <ProjectCard
+          {/* <ProjectCard
             title="Stripe Donation Website"
             placeholder="Stripe Flow Screenshot Coming Soon"
             description="Secure donation backend with Stripe payment gateway and clean REST API design."
             tags={["Java", "Spring Boot", "Stripe"]}
             onView={() => setActiveProject("stripe")}
-          />
+          /> */}
 
            <ProjectCard
             title="Momento Chat Application"
