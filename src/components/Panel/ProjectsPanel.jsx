@@ -34,6 +34,7 @@ export default function ProjectsPanel({ onClose }) {
   const PROJECT_DATA = {
     workpilot: {
       title: "WorkPilot – Employee Management System",
+      github: "https://github.com/rushxbhh/WorkPilot-Project",
       imagePlaceholder: "WorkPilot Screenshot Coming Soon",
       description:
         "Production-grade backend with JWT, OAuth2, auditing, salary module, attendance, logging, global exception handling and layered architecture.",
@@ -59,6 +60,7 @@ export default function ProjectsPanel({ onClose }) {
 
     blockchain: {
       title: "Distributed Blockchain for Supply Chain",
+      github: "https://github.com/rushxbhh/blockchain-supply",
       imagePlaceholder: "Blockchain Diagram Coming Soon",
       description:
         "A real multi-node blockchain system using WebSockets, cryptographic signatures, proof-of-work mining, and MongoDB as persistent ledger.",
@@ -81,6 +83,7 @@ export default function ProjectsPanel({ onClose }) {
 
     currency: {
       title: "Real-Time Currency Converter (React)",
+      github: "https://github.com/rushxbhh/Currency-Convertor",
       imagePlaceholder: "Currency UI Screenshot Coming Soon",
       description:
         "Live conversion for 200+ currencies using reusable components, custom hooks, and Tailwind.",
@@ -93,21 +96,9 @@ export default function ProjectsPanel({ onClose }) {
       stack: ["React", "TailwindCSS", "API", "JavaScript"],
     },
 
-    // stripe: {
-    //   title: "Stripe Donation Website",
-    //   imagePlaceholder: "Stripe Flow Screenshot Coming Soon",
-    //   description:
-    //     "A secure Stripe payment integration with backend payment flow, Spring Boot REST APIs, and complete transaction handling.",
-    //   features: [
-    //     "Stripe payment gateway integration",
-    //     "Secure backend APIs",
-    //     "Transaction response handling",
-    //   ],
-    //   stack: ["Java", "Spring Boot", "Stripe", "HTML", "CSS", "JavaScript"],
-    // },
-
     momento: {
   title: "Momento – Real-Time Ephemeral Chat Platform",
+  github: "https://github.com/rushxbhh/Momento-Chat-Application",
   imagePlaceholder: "Momento Screenshot Coming Soon",
   description:
     "Real-time chat platform built with WebSockets and Redis, designed for ephemeral communication with automatic lifecycle management and horizontal scalability.",
@@ -132,6 +123,7 @@ export default function ProjectsPanel({ onClose }) {
 
     jobScheduler: {
   title: "Distributed Job Orchestration Platform",
+  github: "https://github.com/rushxbhh/Job-Orchestration-System-in-Micro-services-using-Kafka",
   imagePlaceholder: "Job Scheduler Dashboard Coming Soon",
   description:
     "Distributed job processing system using Kafka and microservices, designed for scalable, fault-tolerant background task execution with guaranteed consistency.",
@@ -197,7 +189,7 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="WorkPilot Screenshot Coming Soon"
             description="Production-grade backend with JWT, OAuth2, auditing, salary module, attendance, logging, global exception handling, DTO mapping."
             tags={["Java", "Spring Boot", "JWT", "OAuth2", "MySQL"]}
-            onView={() => setActiveProject("workpilot")}
+            onView={() => setActiveProject(PROJECT_DATA.workpilot)}
           />
 
           <ProjectCard
@@ -205,7 +197,7 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="Blockchain Diagram Coming Soon"
             description="Multi-node blockchain with WebSockets, ECDSA signing, SHA-256 hashing, mining, and MongoDB ledger."
             tags={["Java", "Spring Boot", "WebSockets", "ECDSA", "MongoDB"]}
-            onView={() => setActiveProject("blockchain")}
+            onView={() => setActiveProject(PROJECT_DATA.blockchain)}
           />
 
           <ProjectCard
@@ -213,16 +205,8 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="Currency UI Screenshot Coming Soon"
             description="Live converter for 200+ currencies with reusable components and custom hooks."
             tags={["React", "Tailwind", "API"]}
-            onView={() => setActiveProject("currency")}
+            onView={() => setActiveProject(PROJECT_DATA.currency)}
           />
-
-          {/* <ProjectCard
-            title="Stripe Donation Website"
-            placeholder="Stripe Flow Screenshot Coming Soon"
-            description="Secure donation backend with Stripe payment gateway and clean REST API design."
-            tags={["Java", "Spring Boot", "Stripe"]}
-            onView={() => setActiveProject("stripe")}
-          /> */}
 
            <ProjectCard
             title="Momento Chat Application"

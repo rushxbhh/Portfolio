@@ -94,12 +94,14 @@ export default function ProjectDetailPanel({ project, onClose }) {
 
         {/* BUTTONS */}
         <div className="flex gap-3 mt-8">
-          <a className="px-4 py-2 border-2 border-black bg-[#38bdf8] shadow-[4px_4px_0_0_#000] text-sm font-bold uppercase hover:-translate-x-1 hover:-translate-y-1 transition">
-            Code
-          </a>
-          <a className="px-4 py-2 border-2 border-black bg-[#22c55e] shadow-[4px_4px_0_0_#000] text-sm font-bold uppercase hover:-translate-x-1 hover:-translate-y-1 transition">
-            Demo
-          </a>
+         <a
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-4 py-2 border-2 border-black bg-[#38bdf8] shadow-[4px_4px_0_0_#000] text-sm font-bold uppercase hover:-translate-x-1 hover:-translate-y-1 transition"
+>
+  Code
+</a>
         </div>
       </motion.div>
     </motion.div>
