@@ -229,7 +229,7 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="Momento Screenshot Coming Soon"
             description="Real time chat application using WebSockets (STOMP), dockerized the backend and deployed it on AWS and deployed react frontend on Ngnix"
             tags={["Java", "Spring Boot", "React" , "Redis" , "Docker", "AWS (s3)"]}
-            onView={() => setActiveProject("stripe")}
+            onView={() => setActiveProject("momento")}
           />
 
            <ProjectCard
@@ -237,7 +237,7 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="JOB scheduler Screenshot Coming Soon"
             description="Distributed Job Scheduler using Springboot and Kafka on microservices architecture ensured idempotency accross nodes"
             tags={["Java", "Spring Boot", "Microservices" , "MYSQL" , "Docker", "Kafka"]}
-            onView={() => setActiveProject("stripe")}
+            onView={() => setActiveProject("jobScheduler")}
           />
         </div>
       </motion.div>
