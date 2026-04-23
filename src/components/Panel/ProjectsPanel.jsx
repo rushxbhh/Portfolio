@@ -228,9 +228,9 @@ export default function ProjectsPanel({ onClose }) {
 
       {/* DETAIL POPUP */}
       <ProjectDetailPanel
-        project={PROJECT_DATA[activeProject]}
-        onClose={() => setActiveProject(null)}
-      />
+  project={activeProject}               // ✅ already the object
+  onClose={() => setActiveProject(null)}
+/>
     </div>
   );
 }
@@ -238,7 +238,7 @@ export default function ProjectsPanel({ onClose }) {
 /* --------------------------------------------
    PROJECT CARD COMPONENT
 -------------------------------------------- */
-function ProjectCard({ title, description, placeholder, tags, onView }) {
+function ProjectCard({ title,github, description, placeholder, tags, onView }) {
   return (
     <div className="border-4 border-black p-5 shadow-[8px_8px_0_0_#000] bg-[#fffff0]">
       <div className="w-full h-40 bg-gray-200 border-4 border-black shadow-[4px_4px_0_0_#000]
