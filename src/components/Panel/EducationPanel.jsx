@@ -153,7 +153,7 @@ export default function EducationPanel({ onClose }) {
               <span className="absolute -left-[18px] top-1 w-4 h-4 bg-black border-2 border-black rounded-full"></span>
 
               <h3 className="text-lg font-black">B.Tech — CSE</h3>
-              <p className="text-xs mt-1">2021 — Present</p>
+              <p className="text-xs mt-1">2023 — 2027</p>
               <p className="text-xs opacity-80">Medicaps University</p>
 
               <div className="mt-3 border-4 border-black p-3 bg-[#fffff0] shadow-[5px_5px_0_0_#000]">

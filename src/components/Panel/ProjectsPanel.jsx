@@ -105,6 +105,53 @@ export default function ProjectsPanel({ onClose }) {
       ],
       stack: ["Java", "Spring Boot", "Stripe", "HTML", "CSS", "JavaScript"],
     },
+
+    momento: {
+  title: "Momento – Real-Time Ephemeral Chat Platform",
+  imagePlaceholder: "Momento Screenshot Coming Soon",
+  description:
+    "Real-time chat platform built with WebSockets and Redis, designed for ephemeral communication with automatic lifecycle management and horizontal scalability.",
+  features: [
+    "WebSocket-based real-time messaging (STOMP)",
+    "Ephemeral rooms with Redis TTL auto-expiry",
+    "Auto room cleanup on user disconnect",
+    "Handles 500+ concurrent users with low latency (~100ms)",
+    "Stateless architecture enabling horizontal scaling",
+    "Room-based isolation to prevent data leakage",
+  ],
+  stack: [
+    "Java",
+    "Spring Boot",
+    "WebSockets",
+    "Redis",
+    "React",
+    "STOMP",
+    "Docker",
+  ],
+},
+
+    jobScheduler: {
+  title: "Distributed Job Orchestration Platform",
+  imagePlaceholder: "Job Scheduler Dashboard Coming Soon",
+  description:
+    "Distributed job processing system using Kafka and microservices, designed for scalable, fault-tolerant background task execution with guaranteed consistency.",
+  features: [
+    "Kafka-based asynchronous job queue",
+    "Processes 10,000+ jobs/day across worker nodes",
+    "Idempotent job execution to avoid duplicates",
+    "Job lifecycle tracking (PENDING → RUNNING → COMPLETED/FAILED)",
+    "Retry & failure handling with backoff strategy",
+    "Optimistic locking for consistency",
+  ],
+  stack: [
+    "Java",
+    "Spring Boot",
+    "Apache Kafka",
+    "MySQL",
+    "Microservices",
+    "Docker",
+  ],
+},
   };
 
   return (
@@ -174,6 +221,22 @@ export default function ProjectsPanel({ onClose }) {
             placeholder="Stripe Flow Screenshot Coming Soon"
             description="Secure donation backend with Stripe payment gateway and clean REST API design."
             tags={["Java", "Spring Boot", "Stripe"]}
+            onView={() => setActiveProject("stripe")}
+          />
+
+           <ProjectCard
+            title="Momento Chat Application"
+            placeholder="Momento Screenshot Coming Soon"
+            description="Real time chat application using WebSockets (STOMP), dockerized the backend and deployed it on AWS and deployed react frontend on Ngnix"
+            tags={["Java", "Spring Boot", "React" , "Redis" , "Docker", "AWS (s3)"]}
+            onView={() => setActiveProject("stripe")}
+          />
+
+           <ProjectCard
+            title="Distributed Job orchestration System"
+            placeholder="JOB scheduler Screenshot Coming Soon"
+            description="Distributed Job Scheduler using Springboot and Kafka on microservices architecture ensured idempotency accross nodes"
+            tags={["Java", "Spring Boot", "Microservices" , "MYSQL" , "Docker", "Kafka"]}
             onView={() => setActiveProject("stripe")}
           />
         </div>

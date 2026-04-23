@@ -73,10 +73,6 @@ export default function SkillsPanel({ onClose }) {
               "Java",
               "Spring Boot",
               "REST APIs",
-              "JavaScript",
-              "React",
-              "Redux Toolkit",
-              "TailwindCSS",
             ]}
           />
 
@@ -86,7 +82,7 @@ export default function SkillsPanel({ onClose }) {
             items={[
               "WebSockets",
               "Distributed Blockchain Design",
-              "Consensus Mechanisms",
+              "Kafka",
             ]}
           />
 
@@ -106,7 +102,7 @@ export default function SkillsPanel({ onClose }) {
           <SkillCategory
             title="Databases & Storage"
             color="#38bdf8"
-            items={["MongoDB", "MySQL", "Schema Design"]}
+            items={["MongoDB", "MySQL", "Redis"]}
           />
 
           <SkillCategory
@@ -124,7 +120,7 @@ export default function SkillsPanel({ onClose }) {
             ]}
           />
 
-          <SkillCategory
+          {/* <SkillCategory
             title="System Design"
             color="#14b8a6"
             items={[
@@ -133,7 +129,7 @@ export default function SkillsPanel({ onClose }) {
               "Replication",
               "Scalability Principles",
             ]}
-          />
+          /> */}
         </motion.div>
       </div>
     </motion.div>
